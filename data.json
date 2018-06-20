@@ -4,31 +4,53 @@
       "id": "1",
       "name": "John Doe",
       "email": "john@gmail.com",
-      "age": 36
+      "age": 36,
+      "prod_interest": [
+        {
+            "prod1": "Wireless keyboard",
+            "prod2": "UltraHD monitor",
+            "prod3": "USB Charger 2.2A"
+        }
+      ]
     },
     {
       "id": "2",
       "name": "Keith Wilson",
       "email": "kieth@gmail.com",
-      "age": 50
+      "age": 50,
+      "prod_interest": [
+        {
+            "prod1": "Beach blanket",
+            "prod2": "Suntan lotion",
+            "prod3": "Sand castles"
+        }
+      ]
     },
     {
       "id": "3",
       "name": "Tom Jones",
       "email": "tom@gmail.com",
-      "age": 23
+      "age": 23,
+      "prod_interest": [
+        {
+            "prod1": "GraphQL Server",
+            "prod2": "Node.js Server",
+            "prod3": "JSON Server"
+        }
+      ]
     },
     {
       "id": "5",
       "name": "Jen Thompson",
       "email": "jen@gmail.com",
-      "age": 22
+      "age": 22,
+      "prod_interest": [
+        {
+            "prod1": "Servo control",
+            "prod2": "Ailerons",
+            "prod3": "R/C gas engine"
+        }
+      ]
     },
-    {
-      "name": "Harry White",
-      "email": "harry@gmail.com",
-      "age": 34,
-      "id": "rytP7hhUW"
-    }
   ]
 }
