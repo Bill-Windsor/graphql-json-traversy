@@ -7,9 +7,9 @@
       "age": 36,
       "prod_interest": [
         {
-            "prod1": "Wireless keyboard",
-            "prod2": "UltraHD monitor",
-            "prod3": "USB Charger 2.2A"
+          "prod1": "Wireless keyboard",
+          "prod2": "UltraHD monitor",
+          "prod3": "USB Charger 2.2A"
         }
       ]
     },
@@ -17,12 +17,12 @@
       "id": "2",
       "name": "Keith Wilson",
       "email": "kieth@gmail.com",
-      "age": 50,
+      "age": 44,
       "prod_interest": [
         {
-            "prod1": "Beach blanket",
-            "prod2": "Suntan lotion",
-            "prod3": "Sand castles"
+          "prod1": "Beach blanket",
+          "prod2": "Suntan lotion",
+          "prod3": "Sand castles"
         }
       ]
     },
@@ -33,9 +33,22 @@
       "age": 23,
       "prod_interest": [
         {
-            "prod1": "GraphQL Server",
-            "prod2": "Node.js Server",
-            "prod3": "JSON Server"
+          "prod1": "GraphQL Server",
+          "prod2": "Node.js Server",
+          "prod3": "JSON Server"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Sam Marks",
+      "email": "sam@gmail.com",
+      "age": 36,
+      "prod_interest": [
+        {
+          "prod1": "World Cup Football",
+          "prod2": "UEFA Football",
+          "prod3": "Premier League Football"
         }
       ]
     },
@@ -46,11 +59,17 @@
       "age": 22,
       "prod_interest": [
         {
-            "prod1": "Servo control",
-            "prod2": "Ailerons",
-            "prod3": "R/C gas engine"
+          "prod1": "Servo control",
+          "prod2": "Ailerons",
+          "prod3": "R/C gas engine"
         }
       ]
     },
+    {
+      "name": "Harry White",
+      "email": "harry@gmail.com",
+      "age": 34,
+      "id": "XA1WYKv"
+    }
   ]
 }

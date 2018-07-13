@@ -8,6 +8,9 @@ const {
     GraphQLNonNull
 } = require('graphql');
 
+const data = require("./data.json");
+const customers = data.customers;
+
 /*
 // Hardcoded data
 const customers = [
@@ -21,10 +24,10 @@ const customers = [
 const CustomerType = new GraphQLObjectType({
     name:'Customer',
     fields:() => ({
-        id: {type:GraphQLString},
-        name: {type: GraphQLString},
+        id:    {type: GraphQLString},
+        name:  {type: GraphQLString},
         email: {type: GraphQLString},
-        age: {type: GraphQLInt},
+        age:   {type: GraphQLInt},
     })
 });
 
@@ -45,15 +48,17 @@ const RootQuery= new GraphQLObjectType({
                     }
                 }
                 */
+
+    // axios request here returns the result in a data object, 
+    // so we will re-format the request by:  res => res.data
                 return axios.get('http://localhost:3000/customers/'+ args.id)
                     .then(res => res.data);
-
             }
         },
         customers:{
             type: new GraphQLList(CustomerType),
             resolve(parentValue, args){
-                // return customers;
+                return customers;
                 return axios.get('http://localhost:3000/customers')
                     .then(res => res.data);
             }
@@ -68,15 +73,15 @@ const mutation = new GraphQLObjectType({
         addCustomer:{
             type:CustomerType,
             args:{
-                name: {type: new GraphQLNonNull(GraphQLString)},
+                name:  {type: new GraphQLNonNull(GraphQLString)},
                 email: {type: new GraphQLNonNull(GraphQLString)},
-                age: {type: new GraphQLNonNull(GraphQLInt)}
+                age:   {type: new GraphQLNonNull(GraphQLInt)}
             },
             resolve(parentValue, args){
                 return axios.post('http://localhost:3000/customers', {
-                    name:args.name,
+                    name:  args.name,
                     email: args.email,
-                    age:args.age
+                    age:   args.age
                 })
                 .then(res => res.data);
             }
@@ -94,10 +99,10 @@ const mutation = new GraphQLObjectType({
         editCustomer:{
             type:CustomerType,
             args:{
-                id:{type: new GraphQLNonNull(GraphQLString)},
-                name: {type: GraphQLString},
+                id:    {type: new GraphQLNonNull(GraphQLString)},
+                name:  {type: GraphQLString},
                 email: {type: GraphQLString},
-                age: {type: GraphQLInt}
+                age:   {type: GraphQLInt}
             },
             resolve(parentValue, args){
                 return axios.patch('http://localhost:3000/customers/'+args.id, args)
@@ -109,5 +114,6 @@ const mutation = new GraphQLObjectType({
 
 module.exports = new GraphQLSchema({
     query: RootQuery,
-    mutation
+    mutation: mutation
+// above ^ syntax could be shortened with ES6 syntax to: " mutation " only
 });
