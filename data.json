@@ -17,12 +17,12 @@
       "id": "2",
       "name": "Keith Wilson",
       "email": "kieth@gmail.com",
-      "age": 44,
+      "age": 38,
       "prod_interest": [
         {
-          "prod1": "Beach blanket",
-          "prod2": "Suntan lotion",
-          "prod3": "Sand castles"
+            "prod1": "Beach blanket",
+            "prod2": "Suntan lotion",
+            "prod3": "Surfboard"
         }
       ]
     },
@@ -41,14 +41,27 @@
     },
     {
       "id": "4",
-      "name": "Sam Marks",
-      "email": "sam@gmail.com",
-      "age": 36,
+      "name": "Melanie Donnington",
+      "email": "melanie@gmail.com",
+      "age": 23,
       "prod_interest": [
         {
-          "prod1": "World Cup Football",
-          "prod2": "UEFA Football",
-          "prod3": "Premier League Football"
+            "prod1": "Beethoven symphonies",
+            "prod2": "Handel symphonies",
+            "prod3": "Puccini operas"
+        }
+      ]
+    },
+    { 
+      "id": "4",
+      "name": "Melanie Donnington",
+      "email": "melanie@gmail.com",
+      "age": 23,
+      "prod_interest": [
+        {
+            "prod1": "Beethoven symphonies",
+            "prod2": "Handel symphonies",
+            "prod3": "Puccini operas"
         }
       ]
     },
